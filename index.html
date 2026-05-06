@@ -260,20 +260,20 @@ a:hover { color: var(--sky-deep); }
 }
 .nav-links a:hover { color: var(--sky); }
 
-.nav-links
+.nav-links .nav-cta {
   display: inline-flex;
   align-items: center;
   font-size: 0.88rem;
   font-weight: 600;
   padding: 0.55rem 1.1rem;
   background: var(--ink);
-  color: var(--bg);
+  color: var(--bg) !important;
   border-radius: 4px;
   border: 1.5px solid var(--ink);
   text-decoration: none;
   transition: all 220ms ease;
 }
-.nav-cta:hover { background: var(--sky); border-color: var(--sky); color: var(--bg); }
+.nav-links .nav-cta:hover { background: var(--sky); border-color: var(--sky); color: var(--bg) !important; }
 
 .nav-toggle {
   display: none;
