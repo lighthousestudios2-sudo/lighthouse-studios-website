@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lighthouse Studios | Marketing & Media — Be the beacon in your market.</title>
+<meta name="description" content="AI-powered marketing, media, and growth systems for Southwest Florida businesses. More leads. Less guesswork.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Lighthouse Studios | Marketing & Media">
+<meta property="og:description" content="Be the beacon in your market. AI-powered marketing & media for SWFL businesses.">
+<meta property="og:type" content="website">
+
+<!-- Fonts: Fraunces (display serif) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ====================================================================
+   LIGHTHOUSE STUDIOS — Marketing & Media
+   Palette: Quiet Authority
+   Aesthetic: Premium minimalism, editorial, low cognitive load
+   ==================================================================== */
+
+:root {
+  /* Quiet Authority palette */
+  --bg:           #FFFFFF;
+  --ink:          #0E1B2C;     /* Black-blue, primary text */
+  --ink-soft:     #2A3B52;     /* Softer ink for body */
+  --muted:        #5A7184;     /* Steel-blue gray, captions */
+  --line:         #E5E9EE;     /* Hairline rules */
+  --sand:         #E8DDC9;     /* Warm accent / panels */
+  --sand-soft:    #F5EFE3;     /* Lighter sand for backgrounds */
+  --sky:          #4A90B8;     /* Sky blue, CTAs and links */
+  --sky-deep:     #3A7A9E;     /* Hover state */
+
+  /* Typography */
+  --serif: 'Fraunces', 'Times New Roman', serif;
+  --sans:  'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing scale */
+  --s1: 0.5rem;
+  --s2: 1rem;
+  --s3: 1.5rem;
+  --s4: 2rem;
+  --s5: 3rem;
+  --s6: 4.5rem;
+  --s7: 6rem;
+  --s8: 9rem;
+
+  /* Container */
+  --max: 1180px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; display: block; height: auto; }
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ────────────────────────────────────────────────
+   Typography
+   ──────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 6.5vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--sans);
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sky);
+}
+
+.lede {
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 38em;
+}
+
+p { max-width: 38em; }
+
+a {
+  color: var(--sky);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+a:hover { color: var(--sky-deep); }
+
+/* ────────────────────────────────────────────────
+   Buttons
+   ──────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.9rem 1.6rem;
+  border-radius: 4px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 220ms ease;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.btn-primary:hover {
+  background: var(--sky);
+  border-color: var(--sky);
+  color: var(--bg);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.btn-secondary:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: transparent;
+  padding: 0.9rem 0.25rem;
+}
+.btn-ghost::after {
+  content: "→";
+  transition: transform 220ms ease;
+}
+.btn-ghost:hover::after {
+  transform: translateX(4px);
+}
+
+/* ────────────────────────────────────────────────
+   Nav
+   ──────────────────────────────────────────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 220ms ease;
+}
+.nav.scrolled { border-bottom-color: var(--line); }
+
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.85rem var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+.nav-logo img {
+  height: 40px;
+  width: auto;
+}
+.nav-logo-text {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+.nav-logo-text small {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-links a {
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+.nav-links a:hover { color: var(--sky); }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 4px;
+  border: 1.5px solid var(--ink);
+  text-decoration: none;
+  transition: all 220ms ease;
+}
+.nav-cta:hover { background: var(--sky); border-color: var(--sky); color: var(--bg); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--ink);
+}
+
+@media (max-width: 880px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 1rem var(--gutter) 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-links.open a {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-links.open a:last-child { border-bottom: none; }
+}
+
+/* ────────────────────────────────────────────────
+   HERO
+   ──────────────────────────────────────────────── */
+.hero {
+  padding: clamp(4rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.hero h1 {
+  margin-bottom: var(--s4);
+}
+.hero h1 .accent {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--sky);
+}
+
+.hero-lede {
+  margin-bottom: var(--s5);
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+  color: var(--ink-soft);
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-visual {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-width: 460px;
+  justify-self: center;
+  width: 100%;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 45%,
+              rgba(74, 144, 184, 0.08) 0%,
+              rgba(232, 221, 201, 0.15) 35%,
+              transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-visual img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(14, 27, 44, 0.08));
+}
+
+@media (max-width: 880px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-visual { order: -1; max-width: 280px; }
+}
+
+/* Subtle marquee strip below hero */
+.value-strip {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem 0;
+  background: var(--bg);
+}
+.value-strip-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem 2.5rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.value-strip-inner span::before {
+  content: "✦";
+  color: var(--sand);
+  margin-right: 0.65rem;
+}
+
+/* ────────────────────────────────────────────────
+   SECTION SCAFFOLD
+   ──────────────────────────────────────────────── */
+section { padding: clamp(4rem, 8vw, 7rem) 0; }
+
+.section-head {
+  max-width: 720px;
+  margin: 0 auto var(--s6);
+  text-align: center;
+}
+.section-head .eyebrow { display: inline-block; margin-bottom: var(--s2); }
+.section-head h2 { margin-bottom: var(--s2); }
+.section-head p {
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+/* ────────────────────────────────────────────────
+   APPROACH (3-up)
+   ──────────────────────────────────────────────── */
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.approach-card {
+  padding: 2rem 0 0;
+  border-top: 2px solid var(--ink);
+}
+.approach-num {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--sky);
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.05em;
+}
+.approach-card h3 {
+  margin-bottom: 0.85rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+}
+.approach-card p {
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+}
+
+@media (max-width: 760px) {
+  .approach-grid { grid-template-columns: 1fr; }
+}
+
+/* ────────────────────────────────────────────────
+   PRICING
+   ──────────────────────────────────────────────── */
+.pricing-section {
+  background: var(--sand-soft);
+  position: relative;
+}
+.pricing-section::before,
+.pricing-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--line);
+}
+.pricing-section::before { top: 0; }
+.pricing-section::after { bottom: 0; }
+
+.split-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0 auto var(--s5);
+  background: var(--bg);
+  padding: 0.35rem;
+  border-radius: 6px;
+  width: fit-content;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 8px rgba(14, 27, 44, 0.04);
+}
+.split-toggle button {
+  background: transparent;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  letter-spacing: 0.01em;
+}
+.split-toggle button.active {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.tier {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 2rem 1.75rem;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+.tier:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(14, 27, 44, 0.06);
+}
+.tier.featured {
+  border: 1.5px solid var(--ink);
+  position: relative;
+}
+.tier.featured::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 3px;
+}
+
+.tier-name {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+.tier-target {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1.4rem;
+  min-height: 2.4em;
+}
+
+.tier-price {
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.tier-price-suffix {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 0.25rem;
+}
+.tier-price-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.tier-section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--sky);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.5rem;
+  margin-top: 0.85rem;
+}
+.tier-section-label:first-of-type { margin-top: 0.5rem; }
+
+.tier ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+.tier li {
+  font-size: 0.92rem;
+  padding: 0.4rem 0 0.4rem 1.2rem;
+  position: relative;
+  color: var(--ink-soft);
+  border-bottom: 1px dotted var(--line);
+}
+.tier li:last-child { border-bottom: none; }
+.tier li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  width: 6px;
+  height: 6px;
+  background: var(--sky);
+  border-radius: 50%;
+}
+
+.tier-cta {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+.tier-cta a {
+  display: block;
+  text-align: center;
+  padding: 0.85rem;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all 200ms ease;
+}
+.tier-cta a:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.tier.featured .tier-cta a {
+  background: var(--ink);
+  color: var(--bg);
+}
+.tier.featured .tier-cta a:hover {
+  background: var(--sky);
+  border-color: var(--sky);
+}
+
+@media (max-width: 920px) {
+  .tiers { grid-template-columns: 1fr; gap: 1.5rem; }
+  .tier { padding: 1.75rem 1.5rem; }
+}
+
+/* ────────────────────────────────────────────────
+   À LA CARTE
+   ──────────────────────────────────────────────── */
+.alacarte {
+  margin-top: var(--s6);
+  background: var(--bg);
+  border-radius: 10px;
+  padding: clamp(1.75rem, 3vw, 2.75rem);
+  border: 1px solid var(--line);
+}
+.alacarte-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.alacarte-head h3 {
+  font-size: 1.6rem;
+  font-family: var(--serif);
+}
+.alacarte-head p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.alacarte-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2.5rem;
+}
+.alacarte-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px dotted var(--line);
+  cursor: pointer;
+}
+.alacarte-item-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.alacarte-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.alacarte-name::after {
+  content: "+";
+  font-size: 0.85rem;
+  color: var(--muted);
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition: all 220ms ease;
+  font-weight: 400;
+}
+.alacarte-item.open .alacarte-name::after {
+  content: "−";
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.alacarte-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 350ms ease, margin-top 220ms ease;
+}
+.alacarte-item.open .alacarte-desc {
+  max-height: 200px;
+  margin-top: 0.4rem;
+}
+.alacarte-price {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .alacarte-grid { grid-template-columns: 1fr; gap: 0; }
+}
+
+/* ────────────────────────────────────────────────
+   ABOUT
+   ──────────────────────────────────────────────── */
+.about-section {
+  padding: clamp(5rem, 9vw, 8rem) 0;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.3fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.about-visual {
+  position: sticky;
+  top: 100px;
+}
+.about-visual-card {
+  padding: 2rem;
+  background: var(--sand-soft);
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+.about-visual-card .eyebrow { display: block; margin-bottom: 0.75rem; }
+.about-visual-card h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.about-visual-card .pull-quote {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.45;
+  border-left: 3px solid var(--sky);
+  padding-left: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.about-copy h2 {
+  margin-bottom: var(--s4);
+}
+.about-copy p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  max-width: 36em;
+  color: var(--ink-soft);
+}
+.about-copy p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.4rem;
+  font-weight: 400;
+  float: left;
+  line-height: 0.9;
+  margin: 0.4rem 0.6rem 0 0;
+  color: var(--ink);
+}
+
+.about-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.about-services-label {
+  width: 100%;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.service-pill {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.95rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 880px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-visual { position: static; }
+}
+
+/* ────────────────────────────────────────────────
+   REAL ESTATE PANEL
+   ──────────────────────────────────────────────── */
+.realestate {
+  background: var(--ink);
+  color: var(--bg);
+  padding: clamp(4rem, 7vw, 6rem) 0;
+}
+.realestate .eyebrow { color: var(--sand); }
+.realestate h2 { color: var(--bg); }
+.realestate p { color: rgba(255,255,255,0.78); }
+
+.re-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.re-content h2 { margin-bottom: 1.25rem; }
+.re-content p { font-size: 1.05rem; margin-bottom: 1.5rem; max-width: 34em; }
+
+.re-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.7rem;
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 220ms ease;
+  border: 1.5px solid var(--bg);
+}
+.re-cta:hover {
+  background: var(--sky);
+  color: var(--bg);
+  border-color: var(--sky);
+  transform: translateY(-1px);
+}
+
+.re-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.re-feature {
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+}
+.re-feature h4 {
+  color: var(--bg);
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.re-feature p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 760px) {
+  .re-grid { grid-template-columns: 1fr; }
+}
+
+/* ────────────────────────────────────────────────
+   CONTACT
+   ──────────────────────────────────────────────── */
+.contact-section {
+  background: var(--sand-soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+.contact-intro h2 { margin-bottom: 1.25rem; }
+.contact-intro p {
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+  color: var(--ink-soft);
+}
+
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.contact-channel {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+}
+.contact-channel-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 70px;
+}
+.contact-channel a, .contact-channel span {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* Form */
+.contact-form {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(14, 27, 44, 0.04);
+}
+.field { margin-bottom: 1.15rem; }
+.field label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.02em;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 5px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--bg);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--sky);
+  box-shadow: 0 0 0 3px rgba(74, 144, 184, 0.12);
+}
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: var(--sans);
+}
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.form-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 1rem;
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  border-radius: 5px;
+  font-family: var(--sans);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 220ms ease;
+  letter-spacing: 0.01em;
+}
+.form-submit:hover { background: var(--sky); }
+.form-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.form-success {
+  display: none;
+  background: var(--sand-soft);
+  border: 1px solid var(--sand);
+  border-radius: 6px;
+  padding: 1.25rem;
+  color: var(--ink);
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+.form-success.show { display: block; }
+
+@media (max-width: 880px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .field-row { grid-template-columns: 1fr; }
+}
+
+/* ────────────────────────────────────────────────
+   FOOTER
+   ──────────────────────────────────────────────── */
+.footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.7);
+  padding: 4rem 0 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.footer-brand img {
+  height: 56px;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
+.footer-brand-text {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--bg);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.footer-tagline {
+  font-style: italic;
+  font-family: var(--serif);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.92rem;
+  max-width: 24em;
+}
+.footer-col h4 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bg);
+  margin-bottom: 1rem;
+  font-family: var(--sans);
+}
+.footer-col a, .footer-col span {
+  display: block;
+  color: rgba(255,255,255,0.65);
+  font-size: 0.9rem;
+  margin-bottom: 0.55rem;
+  transition: color 200ms ease;
+}
+.footer-col a:hover { color: var(--bg); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+}
+
+@media (max-width: 880px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 540px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* ────────────────────────────────────────────────
+   ANIMATIONS
+   ──────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  animation: fadeInUp 800ms ease forwards;
+}
+.reveal-1 { animation-delay: 100ms; }
+.reveal-2 { animation-delay: 250ms; }
+.reveal-3 { animation-delay: 400ms; }
+.reveal-4 { animation-delay: 550ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <img src="logo.png" alt="Lighthouse Studios">
+      <div class="nav-logo-text">
+        Lighthouse Studios
+        <small>Marketing & Media</small>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#approach">Approach</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#realestate">Real Estate</a>
+      <a href="#contact" class="nav-cta">Book a Call</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow reveal reveal-1">Southwest Florida — Marketing & Media</span>
+        <h1 class="reveal reveal-2" style="margin-top: 1.25rem;">
+          Be the beacon <span class="accent">in your market.</span>
+        </h1>
+        <p class="hero-lede reveal reveal-3">
+          More leads. Less guesswork. We build AI-powered growth systems for businesses ready to stop hoping and start scaling.
+        </p>
+        <div class="hero-cta-row reveal reveal-4">
+          <a href="#contact" class="btn btn-primary">Book a Call</a>
+          <a href="#pricing" class="btn btn-ghost">See Pricing</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-3">
+        <img src="logo.png" alt="Lighthouse Studios">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="value-strip">
+  <div class="container value-strip-inner">
+    <span>AI-Powered Ads</span>
+    <span>Lead Nurture</span>
+    <span>Content & Video</span>
+    <span>Real Estate Media</span>
+  </div>
+</div>
+
+<!-- ═══════════════════ APPROACH ═══════════════════ -->
+<section id="approach">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How we work</span>
+      <h2>A growth engine, not just a marketing campaign.</h2>
+      <p>We build the system once, then run it for you. Three layers, working together, every day.</p>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <div class="approach-num">01 — Attract</div>
+        <h3>AI-Powered Ads</h3>
+        <p>Targeted ad creative that finds your buyers, tested and optimized continuously. Designed for SWFL markets and seasonal traffic patterns.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">02 — Engage</div>
+        <h3>Content That Converts</h3>
+        <p>Two kinds of content working in tandem: presence content that builds trust over time, and lead-gen content built to drive DMs, opt-ins, and bookings.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">03 — Convert</div>
+        <h3>AI Lead Nurture</h3>
+        <p>Every inbound lead is qualified, nurtured, and booked through automated sequences. You walk into appointments — we handle everything before.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PRICING ═══════════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Three growth systems. One clear path forward.</h2>
+      <p>Every package separates <strong>presence content</strong> (keeps you credible) from <strong>lead-gen content</strong> (fills your calendar). Filming, editing, AI stack, and ad management — all included.</p>
+    </div>
+
+    <div class="tiers">
+      <!-- STARTER -->
+      <div class="tier">
+        <div class="tier-name">Starter</div>
+        <div class="tier-target">Solopreneurs, coaches, personal brands</div>
+        <div>
+          <span class="tier-price">$1,975</span><span class="tier-price-suffix">/mo</span>
+        </div>
+        <div class="tier-price-note">+ $985 one-time setup</div>
+
+        <div class="tier-section-label">Production</div>
+        <ul>
+          <li>1 half-day shoot per month</li>
+        </ul>
+
+        <div class="tier-section-label">Content Output</div>
+        <ul>
+          <li>8 short-form videos (4 presence / 4 lead-gen)</li>
+          <li>8 static posts or carousels</li>
+          <li>1 long-form video</li>
+        </ul>
+
+        <div class="tier-section-label">AI Stack</div>
+        <ul>
+          <li>Ads managed (1 platform)</li>
+          <li>AI lead nurture sequences</li>
+          <li>1 funnel built & optimized</li>
+        </ul>
+
+        <div class="tier-cta"><a href="#contact">Get Started</a></div>
+      </div>
+
+      <!-- GROWTH -->
+      <div class="tier featured">
+        <div class="tier-name">Growth</div>
+        <div class="tier-target">Local service + small B2B</div>
+        <div>
+          <span class="tier-price">$3,775</span><span class="tier-price-suffix">/mo</span>
+        </div>
+        <div class="tier-price-note">+ $1,625 one-time setup</div>
+
+        <div class="tier-section-label">Production</div>
+        <ul>
+          <li>2 half-day shoots per month (or 1 full day)</li>
+        </ul>
+
+        <div class="tier-section-label">Content Output</div>
+        <ul>
+          <li>16 short-form videos (8 presence / 8 lead-gen)</li>
+          <li>12 static posts or carousels</li>
+          <li>2 long-form videos</li>
+          <li>4 ad creatives w/ A/B testing</li>
+        </ul>
+
+        <div class="tier-section-label">AI Stack</div>
+        <ul>
+          <li>Multi-platform ads managed</li>
+          <li>AI appointment-setter (DMs + comments)</li>
+          <li>CRM management & weekly reporting</li>
+        </ul>
+
+        <div class="tier-cta"><a href="#contact">Get Started</a></div>
+      </div>
+
+      <!-- SCALE -->
+      <div class="tier">
+        <div class="tier-name">Scale</div>
+        <div class="tier-target">High ad spend, multi-location, sales teams</div>
+        <div>
+          <span class="tier-price">$6,750</span><span class="tier-price-suffix">/mo</span>
+        </div>
+        <div class="tier-price-note">+ $3,150 one-time setup</div>
+
+        <div class="tier-section-label">Production</div>
+        <ul>
+          <li>Weekly shoots (1 full + 1 half-day per month)</li>
+        </ul>
+
+        <div class="tier-section-label">Content Output</div>
+        <ul>
+          <li>24+ short-form videos</li>
+          <li>Unlimited static posts (within reason)</li>
+          <li>4 long-form videos</li>
+          <li>8+ ad creatives, full funnel testing</li>
+        </ul>
+
+        <div class="tier-section-label">AI Stack</div>
+        <ul>
+          <li>Custom landing pages per campaign</li>
+          <li>Custom automations & integrations</li>
+          <li>Weekly strategy call</li>
+        </ul>
+
+        <div class="tier-cta"><a href="#contact">Get Started</a></div>
+      </div>
+    </div>
+
+    <!-- À LA CARTE -->
+    <div class="alacarte">
+      <div class="alacarte-head">
+        <h3>À la carte add-ons</h3>
+        <p>Tap any item for the full description. Add to any package or purchase as one-off upgrades.</p>
+      </div>
+
+      <div class="alacarte-grid">
+        <!-- Production add-ons -->
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Drone footage (per shoot)</div>
+            <div class="alacarte-desc">Aerial shots requiring separate equipment, FAA Part 107 compliance, and 30–45 minutes of dedicated setup, flight, and capture time. Ideal for real estate, resorts, restaurants with great exteriors, and contractors showing scope of work.</div>
+          </div>
+          <div class="alacarte-price">$200</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Multi-cam setup</div>
+            <div class="alacarte-desc">Two or more cameras rolling simultaneously to capture wide and tight shots of the same moment, allowing seamless cuts in editing. Essential for podcast-style content, panel discussions, and natural dialogue.</div>
+          </div>
+          <div class="alacarte-price">$245</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Cinematic B-roll (gimbal)</div>
+            <div class="alacarte-desc">Stabilized motion shots, slow-motion, tracking shots, and intentional choreography that elevate beyond standard handheld B-roll. Requires a gimbal, planning, and 30–60 minutes of dedicated shooting time. Looks like a commercial.</div>
+          </div>
+          <div class="alacarte-price">$125</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Pro audio package</div>
+            <div class="alacarte-desc">Multi-person wireless lavalier microphones running simultaneously through a mixer, plus a boom or shotgun mic for backup audio. Required when filming conversations between two or more speakers who need clean separate tracks.</div>
+          </div>
+          <div class="alacarte-price">$80</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Additional half-day shoot</div>
+            <div class="alacarte-desc">A second 3–4 hour shoot in the same month, beyond your tier's allotment. Great for location changes (office vs. job site), event coverage, mid-month content refreshes, or capturing seasonal launches.</div>
+          </div>
+          <div class="alacarte-price">$625</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Additional full-day shoot</div>
+            <div class="alacarte-desc">A 7–8 hour shoot, better value per hour than two half-days. Pitched for bigger productions, batch content for multiple months at once, or multi-location days.</div>
+          </div>
+          <div class="alacarte-price">$945</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Rush turnaround (24–48 hrs)</div>
+            <div class="alacarte-desc">Standard delivery is 5–7 business days. Rush moves your project to the front of the queue for time-sensitive launches, events, or announcements.</div>
+          </div>
+          <div class="alacarte-price">$165</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Extra short-form video</div>
+            <div class="alacarte-desc">One additional Reel, TikTok, or Short beyond your tier's allotment. Edited, captioned, and on-brand. Useful when capitalizing on a trending moment or specific campaign.</div>
+          </div>
+          <div class="alacarte-price">$100</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Extra long-form video</div>
+            <div class="alacarte-desc">One additional 3–10 minute polished video — YouTube content, training video, sales explainer, or podcast episode edit. Long-form takes 3–5x the edit time of a short, hence the difference in price.</div>
+          </div>
+          <div class="alacarte-price">$345</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Additional ad creative</div>
+            <div class="alacarte-desc">A new ad variant for testing. Different hook, different CTA, different visual angle. Necessary when current ads fatigue or you want to A/B test new offers.</div>
+          </div>
+          <div class="alacarte-price">$120</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Custom landing page</div>
+            <div class="alacarte-desc">A standalone page built around one offer or campaign — designed to convert ad traffic (form fill, booking, opt-in). What you're getting is the strategy: headline, hook, CTA placement, and mobile optimization.</div>
+          </div>
+          <div class="alacarte-price">$625</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Email/SMS campaign build</div>
+            <div class="alacarte-desc">A pre-built sequence (5–7 messages) for a specific purpose: welcome new leads, re-engage cold leads, promote a launch, recover abandoned bookings. Includes copy, automation logic, and CRM integration. One-time build, runs forever.</div>
+          </div>
+          <div class="alacarte-price">$425</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Podcast / event coverage (½ day)</div>
+            <div class="alacarte-desc">Different from a regular shoot — the deliverable is a full episode edit plus multiple social highlight clips. Includes multi-cam and audio handled appropriately for the format.</div>
+          </div>
+          <div class="alacarte-price">$565</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">DIY Startup Playbook</div>
+            <div class="alacarte-desc">The complete written guide and SOP for businesses who want to set up the AI growth stack themselves. Self-paced, no support included.</div>
+          </div>
+          <div class="alacarte-price">$245</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 2.5rem; max-width: 740px; margin-left: auto; margin-right: auto;">
+      Ad spend billed separately, paid directly by client. 3-month minimum on Starter and Growth; month-to-month thereafter. Travel free within 20 miles of Fort Myers; $0.75/mile beyond. One reshoot per month included if footage is unusable due to error on our end.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <aside class="about-visual">
+        <div class="about-visual-card">
+          <span class="eyebrow">Who you'll work with</span>
+          <h3>A builder. A creator. A supporter of dreams.</h3>
+          <p style="font-size: 0.92rem; color: var(--ink-soft);">Based in Southwest Florida, working with businesses across Fort Myers, Cape Coral, Naples, Bonita Springs, and Sarasota.</p>
+          <div class="pull-quote">
+            "Everyone comes from such different backgrounds and experiences — and that makes you uniquely qualified for a unique market."
+          </div>
+        </div>
+      </aside>
+      <div class="about-copy">
+        <span class="eyebrow">About</span>
+        <h2 style="margin-top: 1rem;">There's a builder behind every brand worth following.</h2>
+
+        <p>Growing up, people asked me what I wanted to be. My answer was usually an architect — I enjoyed designing and creating something that didn't exist. I also said I wanted to be a teacher, and come to find out, I love teaching.</p>
+
+        <p>Now, when my wife asks me what I'm passionate about, I tell her there are just so many things I love to do. I don't really have a dream of my own. What I love more than anything is helping someone else live theirs. That's my goal — to help make your dream come true. I love doing that.</p>
+
+        <p>I'm a builder, a creator, and a supporter of dreams. I believe this world needs the good and innovative things each person brings to the market. Everyone comes from such different backgrounds and experiences, and that makes you uniquely and importantly qualified for a unique market. I want to help you reach that market — however broad or niche it is.</p>
+
+        <div class="about-services">
+          <span class="about-services-label">A range of services</span>
+          <span class="service-pill">Marketing & Media</span>
+          <span class="service-pill">Real Estate</span>
+          <span class="service-pill">Weddings & Events</span>
+          <span class="service-pill">Brand Films</span>
+          <span class="service-pill">Personal Branding</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ REAL ESTATE ═══════════════════ -->
+<section class="realestate" id="realestate">
+  <div class="container">
+    <div class="re-grid">
+      <div class="re-content">
+        <span class="eyebrow">Real Estate Media</span>
+        <h2>Listings that move.<br>Agents that stand out.</h2>
+        <p>From cinematic listing videos to agent branding content — production handled, packages organized, pricing transparent. Order directly through our streamlined real estate portal.</p>
+        <a href="https://portal.spiro.media/order/lighthouse/choose-your-package?coupon=elite26" target="_blank" rel="noopener" class="re-cta">
+          View Real Estate Packages →
+        </a>
+      </div>
+      <div class="re-features">
+        <div class="re-feature">
+          <h4>Cinematic Listing Videos</h4>
+          <p>Drone, gimbal, twilight shoots — packages built for every property tier.</p>
+        </div>
+        <div class="re-feature">
+          <h4>Agent Branding Content</h4>
+          <p>Personal brand reels, market updates, and lifestyle content for top-producing agents.</p>
+        </div>
+        <div class="re-feature">
+          <h4>Fast Turnaround</h4>
+          <p>Most listings delivered within 48 hours. Rush options available for hot markets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-intro">
+        <span class="eyebrow">Let's talk</span>
+        <h2 style="margin-top: 1rem;">Ready to be the beacon?</h2>
+        <p>Tell us a little about what you're building. We respond within one business day, and there's never any pressure on the first call.</p>
+
+        <div class="contact-channels">
+          <div class="contact-channel">
+            <span class="contact-channel-label">Email</span>
+            <a href="mailto:grow@lighthousestudiosfl.com">grow@lighthousestudiosfl.com</a>
+          </div>
+          <div class="contact-channel">
+            <span class="contact-channel-label">Phone</span>
+            <a href="tel:+12397447511">(239) 744-7511</a>
+          </div>
+          <div class="contact-channel">
+            <span class="contact-channel-label">Service area</span>
+            <span>Fort Myers, Cape Coral, Naples, Bonita Springs, Sarasota</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="business">
+        </div>
+        <div class="field">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="">Select an option</option>
+            <option value="starter">Starter — $1,975/mo</option>
+            <option value="growth">Growth — $3,775/mo</option>
+            <option value="scale">Scale — $6,750/mo</option>
+            <option value="realestate">Real Estate Media</option>
+            <option value="weddings">Weddings or Events</option>
+            <option value="other">Not sure yet — let's talk</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Tell us about your business</label>
+          <textarea id="message" name="message" placeholder="A few sentences about what you do, your goals, or what's getting in the way..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Inquiry</button>
+        <p class="form-note">We respond within one business day. No spam, ever.</p>
+        <div class="form-success" id="formSuccess">
+          ✦ Thanks — your message is on its way. We'll respond within one business day.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-text">Lighthouse Studios</div>
+        <div class="footer-tagline">Be the beacon in your market.</div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#approach">Marketing & Media</a>
+        <a href="#realestate">Real Estate</a>
+        <a href="https://www.instagram.com/lighthousevows" target="_blank" rel="noopener">Weddings (@lighthousevows)</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:grow@lighthousestudiosfl.com">grow@lighthousestudiosfl.com</a>
+        <a href="tel:+12397447511">(239) 744-7511</a>
+        <span style="margin-top: 0.85rem; font-size: 0.85rem;">Fort Myers, FL</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Lighthouse Studios. All rights reserved.</span>
+      <span>Marketing & Media for Southwest Florida.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ JS ═══════════════════ -->
+<script>
+// Sticky nav scroll state
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 8);
+});
+
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// À la carte expand/collapse
+document.querySelectorAll('.alacarte-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('open');
+  });
+});
+
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Contact form — graceful no-backend fallback
+// Replace the action attribute with your Formspree (or other) endpoint to enable.
+const form = document.getElementById('contactForm');
+const success = document.getElementById('formSuccess');
+form.addEventListener('submit', (e) => {
+  // If Formspree endpoint is still placeholder, prevent submit and show a friendly message
+  if (form.action.includes('YOUR_FORM_ID')) {
+    e.preventDefault();
+    success.textContent = "✦ Form not yet connected. Email grow@lighthousestudiosfl.com directly while we get this set up.";
+    success.classList.add('show');
+    return;
+  }
+  // Otherwise let Formspree handle it; show success state after a beat
+  setTimeout(() => {
+    success.classList.add('show');
+    form.reset();
+  }, 100);
+});
+</script>
+
+</body>
+</html>
