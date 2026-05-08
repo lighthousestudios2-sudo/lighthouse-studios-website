@@ -1,0 +1,7 @@
+# robots.txt for Lighthouse Studios
+# https://lighthousestudiosfl.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://lighthousestudiosfl.com/sitemap.xml
