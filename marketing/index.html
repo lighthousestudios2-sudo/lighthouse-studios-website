@@ -75,12 +75,12 @@
         "longitude": -81.8723
       },
       "areaServed": ["Fort Myers", "Cape Coral", "Naples", "Bonita Springs", "Sarasota", "Southwest Florida"],
-      "serviceType": ["Digital Marketing", "Video Production", "Social Media Management", "AI Marketing Automation", "Lead Generation", "Real Estate Media"]
+      "serviceType": ["Digital Marketing", "Video Production", "Social Media Management", "AI Marketing Automation", "Lead Generation"]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"How much does marketing with Lighthouse Studios actually cost?","acceptedAnswer":{"@type":"Answer","text":"Our packages start at $1,975/month for solopreneurs and scale up to $6,750/month for businesses with active sales teams and higher ad spend. Every package is a starting point — we tailor the scope, content volume, and AI features to fit your specific goals and capacity. Setup fees range from $985 to $3,150 depending on the package, and ad spend is billed separately and paid directly to the platform."}},
+        {"@type":"Question","name":"How much does marketing with Lighthouse Studios actually cost?","acceptedAnswer":{"@type":"Answer","text":"Our packages start at $1,975/month for solopreneurs and scale up to $6,250/month for businesses with active sales teams and higher ad spend. Every package is a starting point — we tailor the scope, content volume, and AI features to fit your specific goals and capacity. Setup fees range from $985 to $3,150 depending on the package, and ad spend is billed separately and paid directly to the platform."}},
         {"@type":"Question","name":"Are there long-term contracts?","acceptedAnswer":{"@type":"Answer","text":"Starter and Growth packages require a three-month minimum so we have enough runway to actually move the needle. After that, you continue month-to-month and can cancel anytime with 30 days notice. Scale clients are month-to-month from day one."}},
         {"@type":"Question","name":"Do you offer discounts or promotions?","acceptedAnswer":{"@type":"Answer","text":"We're currently running a Founding Client Special: setup is included for the first five clients we onboard. Beyond that, we sometimes offer promo codes through specific channels. If you have a code, enter it on our contact form."}},
         {"@type":"Question","name":"What's actually included in the AI marketing stack?","acceptedAnswer":{"@type":"Answer","text":"Our AI stack handles three things: ad management across Meta, Google, and other platforms; lead nurture sequences that follow up automatically when someone shows interest; and an AI appointment-setter that responds to DMs and comments to qualify leads and book calls. We build the system, then run it for you."}},
@@ -796,6 +796,47 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   border-radius: 50%;
 }
 
+.why-toggle {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.4rem 0 0.5rem;
+  margin-bottom: 0.85rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--sand);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 200ms ease;
+}
+.why-toggle:hover { color: var(--sky); }
+.why-toggle .arrow {
+  display: inline-block;
+  transition: transform 220ms ease;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+.why-toggle.open .arrow { transform: rotate(180deg); }
+.why-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 320ms ease;
+}
+.why-content.open { max-height: 280px; }
+.why-content-inner {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--muted);
+  padding: 0.25rem 0 0.85rem;
+  font-style: italic;
+}
+
 .tier-cta {
   margin-top: auto;
   padding-top: 1.5rem;
@@ -827,6 +868,87 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 @media (max-width: 920px) {
   .tiers { grid-template-columns: 1fr; gap: 1.5rem; }
   .tier { padding: 1.75rem 1.5rem; }
+}
+
+/* ────────────────────────────────────────────────
+   APPROACH PROMO
+   ──────────────────────────────────────────────── */
+.approach-promo {
+  padding: var(--s6) 0;
+  background: var(--bg);
+}
+.approach-promo-card {
+  background: linear-gradient(135deg, var(--ink) 0%, #144852 100%);
+  color: var(--bg);
+  border-radius: 14px;
+  padding: clamp(2.5rem, 5vw, 3.75rem) clamp(2rem, 5vw, 3.75rem);
+  display: grid;
+  grid-template-columns: 1.6fr auto;
+  gap: 2.5rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.approach-promo-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(242,181,68,0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+.approach-promo-content {
+  position: relative;
+  z-index: 1;
+}
+.approach-promo-content .eyebrow {
+  color: var(--sand);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.approach-promo-content h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+  font-weight: 400;
+  color: var(--bg);
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  max-width: 22ch;
+}
+.approach-promo-content p {
+  color: rgba(255, 252, 245, 0.82);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 38em;
+  margin: 0;
+}
+.approach-promo-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.75rem;
+  background: var(--sand);
+  color: var(--ink);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  border: 1.5px solid var(--sand);
+  transition: all 220ms ease;
+  position: relative;
+  z-index: 1;
+}
+.approach-promo-cta:hover {
+  background: var(--bg);
+  border-color: var(--bg);
+  transform: translateY(-1px);
+}
+@media (max-width: 760px) {
+  .approach-promo-card { grid-template-columns: 1fr; gap: 1.75rem; text-align: left; }
+  .approach-promo-cta { justify-self: flex-start; }
 }
 
 /* ────────────────────────────────────────────────
@@ -1088,6 +1210,32 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
    ──────────────────────────────────────────────── */
 .about-section {
   padding: clamp(5rem, 9vw, 8rem) 0;
+}
+
+.about-teaser {
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  background: var(--bg);
+  text-align: center;
+}
+.about-teaser-inner {
+  max-width: 32em;
+  margin: 0 auto;
+}
+.about-teaser .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.about-teaser h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.015em;
+}
+.about-teaser .btn {
+  display: inline-flex;
+  align-items: center;
 }
 .about-grid {
   display: grid;
@@ -1450,6 +1598,32 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   color: rgba(255,255,255,0.5);
 }
 
+.footer-social {
+  display: flex;
+  gap: 0.65rem;
+  margin: 1.5rem 0 1rem;
+  flex-wrap: wrap;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,252,245,0.25);
+  border-radius: 50%;
+  color: rgba(255,252,245,0.78);
+  transition: all 220ms ease;
+  padding: 0;
+}
+.footer-social a:hover {
+  background: var(--sand);
+  border-color: var(--sand);
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+.footer-social svg { width: 16px; height: 16px; fill: currentColor; }
+
 @media (max-width: 880px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
@@ -1535,7 +1709,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
           <a href="#pricing" class="btn btn-ghost">See Pricing</a>
         </div>
         <p class="hero-problem reveal reveal-4">
-          You're already doing the work. Now let's get the right people watching.
+          You're already doing the work. Now let's get you the right leads.
         </p>
       </div>
       <div class="hero-visual reveal reveal-3">
@@ -1549,8 +1723,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   <div class="container value-strip-inner">
     <span>AI-Powered Ads</span>
     <span>Lead Nurture</span>
-    <span>Content & Video</span>
-    <span>Real Estate Media</span>
+    <span>Content &amp; Video</span>
   </div>
 </div>
 
@@ -1604,8 +1777,12 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 
         <div class="tier-section-label">Production</div>
         <ul>
-          <li>1 half-day shoot per month</li>
+          <li>2 half-day shoots per month</li>
         </ul>
+
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">Two monthly visits keep our connection to your business close — fresh content, real-time adjustments, and consistent presence on your channels.</div></div>
+
 
         <div class="tier-section-label">Content Output</div>
         <ul>
@@ -1614,12 +1791,20 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
           <li>1 long-form video</li>
         </ul>
 
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">The 4-presence/4-lead-gen split builds both visibility and pipeline. Long-form gives you ranking power on YouTube and depth for serious researchers.</div></div>
+
+
         <div class="tier-section-label">AI Stack</div>
         <ul>
           <li>Ads managed (1 platform)</li>
           <li>AI lead nurture sequences</li>
           <li>1 funnel built & optimized</li>
         </ul>
+
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">One platform focus means we test, learn, and dial in one channel before complicating things — most local solopreneurs don't need three platforms running, they need one running well.</div></div>
+
 
         <div class="tier-cta"><a href="#contact">Customize This Package</a></div>
       </div>
@@ -1630,14 +1815,18 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
         <div class="tier-target">Local service + small B2B</div>
         <div>
           <span class="tier-price-prefix">Starting at</span>
-          <span class="tier-price">$3,775</span><span class="tier-price-suffix">/mo</span>
+          <span class="tier-price">$3,500</span><span class="tier-price-suffix">/mo</span>
         </div>
         <div class="tier-price-note">+ $1,625 one-time setup</div>
 
         <div class="tier-section-label">Production</div>
         <ul>
-          <li>2 half-day shoots per month (or 1 full day)</li>
+          <li>3 half-day shoots per month</li>
         </ul>
+
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">Three monthly shoots support the higher content volume — enough variety to test different angles, locations, and styles without burning you out.</div></div>
+
 
         <div class="tier-section-label">Content Output</div>
         <ul>
@@ -1647,12 +1836,20 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
           <li>4 ad creatives w/ A/B testing</li>
         </ul>
 
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">Twice the lead-gen content and active A/B testing means we're continuously dialing in what actually drives DMs, opt-ins, and bookings for your audience.</div></div>
+
+
         <div class="tier-section-label">AI Stack</div>
         <ul>
           <li>Multi-platform ads managed</li>
           <li>AI appointment-setter (DMs + comments)</li>
           <li>CRM management & weekly reporting</li>
         </ul>
+
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">Multi-platform ads + an AI appointment-setter means leads get qualified and booked in real-time. Weekly reporting keeps you in the loop on what's working.</div></div>
+
 
         <div class="tier-cta"><a href="#contact">Customize This Package</a></div>
       </div>
@@ -1663,14 +1860,18 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
         <div class="tier-target">High ad spend, multi-location, sales teams</div>
         <div>
           <span class="tier-price-prefix">Starting at</span>
-          <span class="tier-price">$6,750</span><span class="tier-price-suffix">/mo</span>
+          <span class="tier-price">$6,250</span><span class="tier-price-suffix">/mo</span>
         </div>
         <div class="tier-price-note">+ $3,150 one-time setup</div>
 
         <div class="tier-section-label">Production</div>
         <ul>
-          <li>Weekly shoots (1 full + 1 half-day per month)</li>
+          <li>Weekly shoots (4–5 half-day shoots per month)</li>
         </ul>
+
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">Weekly shoots = always-fresh content, faster reaction to market shifts, and the ability to support major launches and seasonal pushes without scrambling.</div></div>
+
 
         <div class="tier-section-label">Content Output</div>
         <ul>
@@ -1680,12 +1881,20 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
           <li>8+ ad creatives, full funnel testing</li>
         </ul>
 
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">24+ short-form pieces and 8+ ad creatives gives us full funnel testing — every stage from cold-traffic awareness to retargeting to conversion has dedicated assets.</div></div>
+
+
         <div class="tier-section-label">AI Stack</div>
         <ul>
           <li>Custom landing pages per campaign</li>
           <li>Custom automations & integrations</li>
           <li>Weekly strategy call</li>
         </ul>
+
+        <button class="why-toggle" type="button"><span class="arrow">▾</span> Why this works</button>
+        <div class="why-content"><div class="why-content-inner">Custom landing pages per campaign, custom automations, and a weekly strategy call means the system evolves with your business, not the other way around.</div></div>
+
 
         <div class="tier-cta"><a href="#contact">Customize This Package</a></div>
       </div>
@@ -1695,50 +1904,25 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
     <div class="custom-panel">
       <div class="custom-panel-content">
         <h3>Need something different?</h3>
-        <p>Every business is different. We use these as starting points and tailor each package to your specific goals, market, and capacity.</p>
+        <p>We'll help you build a custom package. Every business is different — we use these as starting points and tailor each package to your specific goals, market, and capacity.</p>
       </div>
-      <a href="#contact" class="custom-panel-cta">Build a Custom Package →</a>
+      <a href="#contact" class="custom-panel-cta">Book a Call →</a>
     </div>
 
     <!-- À LA CARTE -->
     <div class="alacarte">
       <div class="alacarte-head">
-        <h3>À la carte add-ons</h3>
+        <h3>Top 5 à la carte add-ons</h3>
         <p>Tap any item for the full description. Add to any package or purchase as one-off upgrades.</p>
       </div>
 
       <div class="alacarte-grid">
-        <!-- Production add-ons -->
         <div class="alacarte-item">
           <div class="alacarte-item-main">
             <div class="alacarte-name">Drone footage (per shoot)</div>
             <div class="alacarte-desc">Aerial shots requiring separate equipment, FAA Part 107 compliance, and 30–45 minutes of dedicated setup, flight, and capture time. Ideal for real estate, resorts, restaurants with great exteriors, and contractors showing scope of work.</div>
           </div>
           <div class="alacarte-price">$200</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Multi-cam setup</div>
-            <div class="alacarte-desc">Two or more cameras rolling simultaneously to capture wide and tight shots of the same moment, allowing seamless cuts in editing. Essential for podcast-style content, panel discussions, and natural dialogue.</div>
-          </div>
-          <div class="alacarte-price">$245</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Cinematic B-roll (gimbal)</div>
-            <div class="alacarte-desc">Stabilized motion shots, slow-motion, tracking shots, and intentional choreography that elevate beyond standard handheld B-roll. Requires a gimbal, planning, and 30–60 minutes of dedicated shooting time. Looks like a commercial.</div>
-          </div>
-          <div class="alacarte-price">$125</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Pro audio package</div>
-            <div class="alacarte-desc">Multi-person wireless lavalier microphones running simultaneously through a mixer, plus a boom or shotgun mic for backup audio. Required when filming conversations between two or more speakers who need clean separate tracks.</div>
-          </div>
-          <div class="alacarte-price">$80</div>
         </div>
 
         <div class="alacarte-item">
@@ -1751,42 +1935,10 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 
         <div class="alacarte-item">
           <div class="alacarte-item-main">
-            <div class="alacarte-name">Additional full-day shoot</div>
-            <div class="alacarte-desc">A 7–8 hour shoot, better value per hour than two half-days. Pitched for bigger productions, batch content for multiple months at once, or multi-location days.</div>
-          </div>
-          <div class="alacarte-price">$945</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Rush turnaround (24–48 hrs)</div>
-            <div class="alacarte-desc">Standard delivery is 5–7 business days. Rush moves your project to the front of the queue for time-sensitive launches, events, or announcements.</div>
-          </div>
-          <div class="alacarte-price">$165</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
             <div class="alacarte-name">Extra short-form video</div>
             <div class="alacarte-desc">One additional Reel, TikTok, or Short beyond your tier's allotment. Edited, captioned, and on-brand. Useful when capitalizing on a trending moment or specific campaign.</div>
           </div>
           <div class="alacarte-price">$100</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Extra long-form video</div>
-            <div class="alacarte-desc">One additional 3–10 minute polished video — YouTube content, training video, sales explainer, or podcast episode edit. Long-form takes 3–5x the edit time of a short, hence the difference in price.</div>
-          </div>
-          <div class="alacarte-price">$345</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Additional ad creative</div>
-            <div class="alacarte-desc">A new ad variant for testing. Different hook, different CTA, different visual angle. Necessary when current ads fatigue or you want to A/B test new offers.</div>
-          </div>
-          <div class="alacarte-price">$120</div>
         </div>
 
         <div class="alacarte-item">
@@ -1799,27 +1951,15 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 
         <div class="alacarte-item">
           <div class="alacarte-item-main">
-            <div class="alacarte-name">Email/SMS campaign build</div>
-            <div class="alacarte-desc">A pre-built sequence (5–7 messages) for a specific purpose: welcome new leads, re-engage cold leads, promote a launch, recover abandoned bookings. Includes copy, automation logic, and CRM integration. One-time build, runs forever.</div>
+            <div class="alacarte-name">Rush turnaround (24–48 hrs)</div>
+            <div class="alacarte-desc">Standard delivery is 5–7 business days. Rush moves your project to the front of the queue for time-sensitive launches, events, or announcements.</div>
           </div>
-          <div class="alacarte-price">$425</div>
+          <div class="alacarte-price">$165</div>
         </div>
+      </div>
 
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">Podcast / event coverage (½ day)</div>
-            <div class="alacarte-desc">Different from a regular shoot — the deliverable is a full episode edit plus multiple social highlight clips. Includes multi-cam and audio handled appropriately for the format.</div>
-          </div>
-          <div class="alacarte-price">$565</div>
-        </div>
-
-        <div class="alacarte-item">
-          <div class="alacarte-item-main">
-            <div class="alacarte-name">DIY Startup Playbook</div>
-            <div class="alacarte-desc">The complete written guide and SOP for businesses who want to set up the AI growth stack themselves. Self-paced, no support included.</div>
-          </div>
-          <div class="alacarte-price">$245</div>
-        </div>
+      <div style="text-align: center; margin-top: 2.25rem;">
+        <a href="/marketing/add-ons/" style="display: inline-flex; align-items: center; padding: 0.85rem 1.85rem; background: var(--ink); color: var(--bg); border-radius: 4px; font-weight: 600; font-size: 0.95rem; border: 1.5px solid var(--ink); transition: all 220ms ease; text-decoration: none;" onmouseover="this.style.background='var(--sand)';this.style.borderColor='var(--sand)';this.style.color='var(--ink)';" onmouseout="this.style.background='var(--ink)';this.style.borderColor='var(--ink)';this.style.color='var(--bg)';">See the full list →</a>
       </div>
     </div>
 
@@ -1829,52 +1969,40 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   </div>
 </section>
 
-<!-- ═══════════════════ ABOUT ═══════════════════ -->
-<section class="about-section" id="about">
+<!-- ═══════════════════ APPROACH PROMO ═══════════════════ -->
+<section class="approach-promo">
   <div class="container">
-    <div class="about-grid">
-      <aside class="about-visual">
-        <div class="about-visual-card">
-          <span class="eyebrow">Who you'll work with</span>
-          <h3>A builder. A creator. A supporter of dreams.</h3>
-          <p style="font-size: 0.92rem; color: var(--ink-soft);">Based in Southwest Florida, working with businesses across Fort Myers, Cape Coral, Naples, Bonita Springs, and Sarasota.</p>
-          <div class="pull-quote">
-            "Everyone comes from such different backgrounds and experiences — and that makes you uniquely qualified for a unique market."
-          </div>
-        </div>
-      </aside>
-      <div class="about-copy">
-        <span class="eyebrow">About</span>
-        <h2 style="margin-top: 1rem;">There's a builder behind every brand worth following.</h2>
-        <p class="about-byline">— The Founder, Lighthouse Studios</p>
-
-        <p>Growing up, people asked me what I wanted to be. My answer was usually an architect — I enjoyed designing and creating something that didn't exist. I also said I wanted to be a teacher, and come to find out, I love teaching.</p>
-
-        <p>Now, when my wife asks me what I'm passionate about, I tell her there are just so many things I love to do. I don't really have a dream of my own. What I love more than anything is helping someone else live theirs. That's my goal — to help make your dream come true. I love doing that.</p>
-
-        <p>I'm a builder, a creator, and a supporter of dreams. I believe this world needs the good and innovative things each person brings to the market. Everyone comes from such different backgrounds and experiences, and that makes you uniquely and importantly qualified for a unique market. I want to help you reach that market — however broad or niche it is.</p>
-
-        <div class="about-services">
-          <span class="about-services-label">A range of services</span>
-          <span class="service-pill">Marketing & Media</span>
-          <span class="service-pill">Real Estate</span>
-          <span class="service-pill">Weddings & Events</span>
-          <span class="service-pill">Brand Films</span>
-          <span class="service-pill">Personal Branding</span>
-        </div>
+    <div class="approach-promo-card">
+      <div class="approach-promo-content">
+        <span class="eyebrow">The how</span>
+        <h2>Our approach to getting those leads.</h2>
+        <p>The system that runs underneath every campaign. The content that's custom to you. How we test three ad styles to find what your audience responds to. The full thinking lives one click away.</p>
       </div>
+      <a href="/marketing/approach" class="approach-promo-cta">See Our Approach →</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════ FAQ ═══════════════════ -->
+<!-- ═══════════════════ ABOUT TEASER ═══════════════════ -->
+<section class="about-teaser" id="about">
+  <div class="container">
+    <div class="about-teaser-inner">
+      <span class="eyebrow">About</span>
+      <h2>About Lighthouse Marketing.</h2>
+      <a href="/marketing/about/" class="btn btn-primary">More about Lighthouse Marketing →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ FAQ (3 FEATURED) ═══════════════════ -->
 <section class="faq-section" id="faq">
   <div class="container">
     <div class="faq-grid">
       <div class="faq-intro">
         <span class="eyebrow">Questions, answered</span>
         <h2>Before you book a call.</h2>
-        <p>The questions we hear most often, answered straight. If yours isn't here, tell us when you reach out — we'll cover it on the call.</p>
+        <p>The three questions we hear most. The rest live on our full FAQ page — and if yours isn't covered, tell us when you reach out.</p>
       </div>
       <div class="faq-list">
 
@@ -1884,7 +2012,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
             <span class="faq-toggle" aria-hidden="true">+</span>
           </button>
           <div class="faq-answer"><div class="faq-answer-inner">
-            Our packages start at $1,975/month for solopreneurs and scale up to $6,750/month for businesses with active sales teams and higher ad spend. Every package is a starting point — we tailor the scope, content volume, and AI features to fit your specific goals and capacity. Setup fees range from $985 to $3,150 depending on the package, and ad spend is billed separately and paid directly to the platform.
+            Our packages start at $1,975/month for solopreneurs and scale up to $6,250/month for businesses with active sales teams and higher ad spend. Every package is a starting point — we tailor the scope, content volume, and AI features to fit your specific goals and capacity. Setup fees range from $985 to $3,150 depending on the package, and ad spend is billed separately and paid directly to the platform.
           </div></div>
         </div>
 
@@ -1900,66 +2028,6 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>Do you offer discounts or promotions?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            We're currently running a Founding Client Special: setup is included for the first five clients we onboard. Beyond that, we sometimes offer promo codes through specific channels (referrals, partner introductions, local networking events). If you have a code, enter it on our contact form.
-          </div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>What's actually included in the AI marketing stack?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            Our AI stack handles three things: ad management across Meta, Google, and other platforms; lead nurture sequences that follow up automatically when someone shows interest; and an AI appointment-setter that responds to DMs and comments to qualify leads and book calls. We build the system, then run it for you.
-          </div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Do you film the video content yourselves?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            Yes. Every package includes on-site filming — we come to you with cameras, lights, and audio gear, then handle all the editing, captions, and posting. You don't need to learn how to film, write captions, or hit "publish." That's our job.
-          </div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>What's the difference between presence content and lead-gen content?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            Presence content keeps your profile credible and top-of-mind — videos and posts that build trust over time so when someone's ready to buy, they remember you. Lead-gen content is built around hooks and calls-to-action specifically designed to drive direct messages, opt-ins, and bookings. Most agencies do one or the other. We do both, in proportions tailored to your goals.
-          </div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Do you only work with businesses in Southwest Florida?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            Most of our clients are in the Fort Myers, Cape Coral, Naples, Bonita Springs, and Sarasota areas because our packages include in-person filming. Travel within 20 miles of Fort Myers is included; beyond that we charge mileage. If you're outside SWFL but want our AI marketing services without on-site filming, we can build a custom remote-only package.
-          </div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>What types of businesses do you work best with?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            Local service businesses (realtors, contractors, gyms, restaurants), professional service providers (coaches, consultants, attorneys), and small B2B companies. The common thread: they have a real business, real customers, and want consistent inbound leads without becoming full-time content creators themselves.
-          </div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
             <span>How is Lighthouse Studios different from other marketing agencies?</span>
             <span class="faq-toggle" aria-hidden="true">+</span>
           </button>
@@ -1968,22 +2036,12 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
           </div></div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>What if I'm not sure which package fits?</span>
-            <span class="faq-toggle" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">
-            Most clients aren't sure on their first call. That's part of what the conversation is for. Tell us about your business, what's working, what isn't, and what you'd love to see happen in the next 90 days. We'll recommend a starting point and customize from there.
-          </div></div>
-        </div>
-
       </div>
     </div>
 
     <div class="faq-cta">
-      <p>Still have questions? We're a phone call away.</p>
-      <a href="#contact" class="btn btn-primary">Book a Call</a>
+      <p>Have more questions?</p>
+      <a href="/marketing/faqs/" class="btn btn-primary">See all FAQs →</a>
     </div>
   </div>
 </section>
@@ -2037,8 +2095,8 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
           <select id="interest" name="interest">
             <option value="">Select an option</option>
             <option value="starter">Starter — starting at $1,975/mo</option>
-            <option value="growth">Growth — starting at $3,775/mo</option>
-            <option value="scale">Scale — starting at $6,750/mo</option>
+            <option value="growth">Growth — starting at $3,500/mo</option>
+            <option value="scale">Scale — starting at $6,250/mo</option>
             <option value="custom">Custom package</option>
             <option value="realestate">Real Estate Media</option>
             <option value="weddings">Weddings or Events</option>
@@ -2092,6 +2150,26 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
         <span style="margin-top: 0.85rem; font-size: 0.85rem;">Fort Myers, FL</span>
       </div>
     </div>
+        <div class="footer-social" aria-label="Social links">
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.2 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 8.5 2.6 8.8 2.6 12s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.5.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.5.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.5-.1-4.7-.1zm0 3.1c2.7 0 4.9 2.2 4.9 4.9s-2.2 4.9-4.9 4.9-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9zm0 8c1.8 0 3.2-1.4 3.2-3.2s-1.4-3.2-3.2-3.2-3.2 1.4-3.2 3.2 1.4 3.2 3.2 3.2zm6.3-8.2c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1.5-1.1 1.1-1.1 1.1.5 1.1 1.1z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.6c-.8 0-1.5-.7-1.5-1.5S6.2 5.6 7 5.6s1.5.7 1.5 1.5S7.8 8.6 7 8.6zm11.3 9.7h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2c.3-.6 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4.1v4.7z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.6 6.3c-.6-.2-1.2-.5-1.7-.9-.7-.5-1.2-1.2-1.5-2-.1-.4-.2-.8-.2-1.2h-3.3v13.3c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5 1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1V9.8c-.3 0-.5-.1-.8-.1-3.2 0-5.8 2.6-5.8 5.8s2.6 5.8 5.8 5.8 5.8-2.6 5.8-5.8V9.4c1.2.9 2.7 1.4 4.3 1.4V7.5c-.3 0-.6 0-.9-.1z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Threads">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.3 11.1c-.1 0-.2-.1-.3-.1-.1-1.6-1.1-3-2.6-3.7-1.5-.7-3.5-.5-5 .5-.4.3-.5.8-.3 1.2.3.4.8.5 1.2.3 1-.7 2.4-.8 3.4-.3 1 .5 1.6 1.4 1.7 2.4-.7-.1-1.4-.2-2.2-.1-2 .2-3.4 1.4-3.3 2.9.1 1.5 1.6 2.5 3.4 2.4 1.6-.1 2.9-1.1 3.2-2.5 1.2.6 2.1 1.5 2.4 2.6.4 1.4-.4 3-2.3 4-1.6.9-3.6 1-5.3.3-2-.8-3.2-2.4-3.5-4.7-.2-1.4-.2-3 .1-4.5.6-3.6 2.7-5.3 6-5.3 2.6 0 4.6 1.1 5.7 3.1.2.4.7.5 1.1.3.4-.2.5-.7.3-1.1-1.4-2.5-3.9-3.9-7-3.9-4.1 0-6.9 2.3-7.6 6.5-.4 1.7-.4 3.5-.1 5.1.4 2.7 2 4.7 4.5 5.8 1 .4 2.1.6 3.3.6 1.2 0 2.4-.3 3.5-.9 2.5-1.4 3.6-3.7 3-5.7-.5-1.7-1.9-3-3.7-3.7zm-3.7 4.1c-.9.1-1.8-.3-1.8-.9 0-.4.4-.9 1.7-1 .2 0 .4 0 .6 0 .5 0 1.1.1 1.5.2-.1 1-1 1.6-2 1.7z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
     <div class="footer-bottom">
       <span>© <span id="year"></span> Lighthouse Studios<sup class="tm-mark">™</sup>. All rights reserved.</span>
       <span>Lighthouse Marketing · Part of Lighthouse Studios</span>
@@ -2143,6 +2221,17 @@ document.querySelectorAll('.faq-item').forEach(item => {
   btn.addEventListener('click', () => {
     const isOpen = item.classList.toggle('open');
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+});
+
+// Why this works toggles (tier cards)
+document.querySelectorAll('.why-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    const content = btn.nextElementSibling;
+    if (content && content.classList.contains('why-content')) {
+      content.classList.toggle('open');
+    }
   });
 });
 
