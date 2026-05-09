@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full À La Carte Add-Ons | Lighthouse Marketing</title>
+<meta name="description" content="The complete list of à la carte add-ons available with any Lighthouse Marketing package. Drone, multi-cam, rush turnaround, custom landing pages, and more.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lighthousestudiosfl.com/marketing/add-ons/">
+
+<meta property="og:title" content="Full Add-Ons List | Lighthouse Marketing">
+<meta property="og:description" content="Every à la carte option for customizing your Lighthouse Marketing package.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lighthousestudiosfl.com/marketing/add-ons/">
+
+<link rel="icon" type="image/png" href="/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #FFFCF5; --ink: #0F3D47; --ink-soft: #1F4F5C; --muted: #5A7E87;
+  --line: #DDE6E8; --sand: #F2B544; --sand-soft: #FDF4DE;
+  --sky: #0F3D47;
+  --serif: 'Fraunces', 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --max: 1180px; --max-narrow: 880px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans); font-size: 17px; line-height: 1.6;
+  color: var(--ink-soft); background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+.container-narrow { max-width: var(--max-narrow); margin: 0 auto; padding: 0 var(--gutter); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; color: var(--ink); letter-spacing: -0.02em; line-height: 1.05; }
+.tm-mark { font-size: 0.55em; font-weight: 500; margin-left: 0.1em; vertical-align: super; opacity: 0.75; }
+.eyebrow {
+  display: inline-block; font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--sand);
+  margin-bottom: 1rem;
+}
+
+/* NAV */
+.nav {
+  position: sticky; top: 0; z-index: 90;
+  background: rgba(255, 252, 245, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 240ms ease;
+}
+.nav.scrolled { border-bottom-color: var(--line); }
+.nav-inner {
+  max-width: var(--max); margin: 0 auto;
+  padding: 1rem var(--gutter);
+  display: flex; justify-content: space-between; align-items: center; gap: 2rem;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 0.7rem;
+  font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--ink);
+}
+.nav-logo img { height: 38px; width: auto; }
+.nav-logo-text { display: flex; flex-direction: column; line-height: 1.05; }
+.nav-logo-text small {
+  font-family: var(--sans); font-size: 0.62rem; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  margin-top: 0.25rem;
+}
+.nav-links { display: flex; gap: 1.5rem; align-items: center; }
+.nav-links a {
+  color: var(--ink); font-weight: 500; font-size: 0.9rem;
+  transition: color 200ms ease;
+}
+.nav-links a:hover { color: var(--sand); }
+.nav-links .nav-cta {
+  padding: 0.55rem 1.1rem; background: var(--ink);
+  color: var(--bg) !important; border-radius: 4px;
+  border: 1.5px solid var(--ink); font-weight: 600; font-size: 0.88rem;
+  transition: all 220ms ease;
+}
+.nav-links .nav-cta:hover { background: var(--sand); border-color: var(--sand); color: var(--ink) !important; }
+@media (max-width: 760px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+/* HERO */
+.page-hero {
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
+}
+.page-hero h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: 400; letter-spacing: -0.025em; line-height: 1.05;
+  margin-bottom: 1.25rem; max-width: 22ch;
+}
+.page-hero p {
+  font-size: 1.05rem; color: var(--ink-soft); max-width: 42em; line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.page-hero p.note {
+  background: var(--sand-soft); padding: 1rem 1.25rem;
+  border-left: 3px solid var(--sand); border-radius: 4px;
+  font-size: 0.95rem; max-width: 42em;
+}
+
+/* ALACARTE LIST */
+.alacarte-section { padding: clamp(2rem, 4vw, 3.5rem) 0 clamp(4rem, 6vw, 5rem); }
+.alacarte-category {
+  margin-bottom: 3rem;
+}
+.alacarte-category-head {
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sand); margin-bottom: 1.25rem;
+  padding-bottom: 0.65rem; border-bottom: 2px solid var(--ink);
+  font-family: var(--sans);
+}
+.alacarte-grid { display: flex; flex-direction: column; }
+.alacarte-item {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 1rem; padding: 1rem 0;
+  border-bottom: 1px dashed var(--line); cursor: pointer;
+  transition: padding 200ms ease;
+}
+.alacarte-item:hover { padding-left: 0.5rem; }
+.alacarte-item-main { flex: 1; }
+.alacarte-name {
+  font-family: var(--serif); font-size: 1.1rem; color: var(--ink);
+  font-weight: 500; margin-bottom: 0.25rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.alacarte-name::after {
+  content: "+"; font-family: var(--sans); font-size: 0.85rem;
+  color: var(--sand); font-weight: 700; transition: transform 240ms ease;
+  display: inline-block;
+}
+.alacarte-item.open .alacarte-name::after { transform: rotate(45deg); }
+.alacarte-desc {
+  font-size: 0.92rem; color: var(--muted); line-height: 1.55;
+  max-height: 0; overflow: hidden; transition: max-height 320ms ease;
+}
+.alacarte-item.open .alacarte-desc { max-height: 200px; padding-top: 0.5rem; }
+.alacarte-price {
+  font-family: var(--serif); font-size: 1.05rem; color: var(--ink);
+  font-weight: 500; flex-shrink: 0;
+}
+
+/* CTA */
+.cta-block {
+  background: var(--sand-soft);
+  padding: clamp(3rem, 5vw, 4.5rem) 0;
+  text-align: center;
+}
+.cta-block h2 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  margin-bottom: 1rem; font-weight: 500;
+}
+.cta-block p {
+  max-width: 36em; margin: 0 auto 2rem; color: var(--ink-soft);
+}
+.btn-primary {
+  display: inline-flex; align-items: center;
+  padding: 0.95rem 2rem; background: var(--ink);
+  color: var(--bg); border-radius: 4px; font-weight: 600;
+  font-size: 0.98rem; border: 1.5px solid var(--ink);
+  transition: all 220ms ease;
+}
+.btn-primary:hover {
+  background: var(--sand); border-color: var(--sand);
+  color: var(--ink); transform: translateY(-1px);
+}
+
+/* FOOTER */
+.footer { background: var(--ink); color: var(--bg); padding: clamp(3rem, 5vw, 4.5rem) 0 2rem; }
+.footer-grid {
+  display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 2.5rem; margin-bottom: 2.5rem;
+}
+.footer-brand img { height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1); }
+.footer-brand-text { font-family: var(--serif); font-size: 1.1rem; color: var(--bg); font-weight: 500; }
+.footer-tagline {
+  font-style: italic; font-family: var(--serif);
+  color: rgba(255,255,255,0.6); font-size: 0.92rem; margin-top: 0.75rem;
+}
+.footer-col h4 {
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--sand); margin-bottom: 1.1rem;
+}
+.footer-col a {
+  display: block; color: rgba(255,255,255,0.78);
+  font-size: 0.93rem; padding: 0.4rem 0; transition: color 200ms ease;
+}
+.footer-col a:hover { color: var(--sand); }
+.footer-social { display: flex; gap: 0.65rem; margin: 1.5rem 0 1rem; flex-wrap: wrap; }
+.footer-social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px;
+  border: 1px solid rgba(255,252,245,0.25); border-radius: 50%;
+  color: rgba(255,252,245,0.78); transition: all 220ms ease;
+}
+.footer-social a:hover {
+  background: var(--sand); border-color: var(--sand);
+  color: var(--ink); transform: translateY(-2px);
+}
+.footer-social svg { width: 16px; height: 16px; fill: currentColor; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 1.25rem; display: flex; justify-content: space-between;
+  font-size: 0.82rem; color: rgba(255,255,255,0.45);
+  flex-wrap: wrap; gap: 1rem;
+}
+@media (max-width: 880px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } .footer-brand { grid-column: 1 / -1; } }
+@media (max-width: 540px) { .footer-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/logo.png" alt="Lighthouse Studios">
+      <span class="nav-logo-text">
+        Lighthouse Marketing
+        <small>Lighthouse Studios™ · LHM</small>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="/marketing/approach">Approach</a>
+      <a href="/marketing/#pricing">Pricing</a>
+      <a href="/marketing/#about">About</a>
+      <a href="/marketing/#contact" class="nav-cta">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container-narrow">
+    <span class="eyebrow">À La Carte Add-Ons</span>
+    <h1>The full add-on menu.</h1>
+    <p>Every à la carte option for customizing your Lighthouse Marketing package — extra shoots, specialized equipment, additional content, ad creative, sequences, and more. Tap any item for the full description.</p>
+    <p class="note"><strong>You don't need to figure this out alone.</strong> We'll review the list with you on your call to make sure you've added everything you want and removed anything you don't need. The goal is the right package for your business — not the biggest one.</p>
+  </div>
+</section>
+
+<!-- ADD-ONS LIST -->
+<section class="alacarte-section">
+  <div class="container-narrow">
+
+    <div class="alacarte-category">
+      <div class="alacarte-category-head">Production · Equipment &amp; Crew</div>
+      <div class="alacarte-grid">
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Drone footage (per shoot)</div>
+            <div class="alacarte-desc">Aerial shots requiring separate equipment, FAA Part 107 compliance, and 30–45 minutes of dedicated setup, flight, and capture time. Ideal for real estate, resorts, restaurants with great exteriors, and contractors showing scope of work.</div>
+          </div>
+          <div class="alacarte-price">$200</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Multi-cam setup</div>
+            <div class="alacarte-desc">Two or more cameras rolling simultaneously to capture wide and tight shots of the same moment, allowing seamless cuts in editing. Essential for podcast-style content, panel discussions, and natural dialogue.</div>
+          </div>
+          <div class="alacarte-price">$245</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Cinematic B-roll (gimbal)</div>
+            <div class="alacarte-desc">Stabilized motion shots, slow-motion, tracking shots, and intentional choreography that elevate beyond standard handheld B-roll. Requires a gimbal, planning, and 30–60 minutes of dedicated shooting time. Looks like a commercial.</div>
+          </div>
+          <div class="alacarte-price">$125</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Pro audio package</div>
+            <div class="alacarte-desc">Multi-person wireless lavalier microphones running simultaneously through a mixer, plus a boom or shotgun mic for backup audio. Required when filming conversations between two or more speakers who need clean separate tracks.</div>
+          </div>
+          <div class="alacarte-price">$80</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alacarte-category">
+      <div class="alacarte-category-head">Production · Additional Shoots</div>
+      <div class="alacarte-grid">
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Additional half-day shoot</div>
+            <div class="alacarte-desc">A second 3–4 hour shoot in the same month, beyond your tier's allotment. Great for location changes (office vs. job site), event coverage, mid-month content refreshes, or capturing seasonal launches.</div>
+          </div>
+          <div class="alacarte-price">$625</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Additional full-day shoot</div>
+            <div class="alacarte-desc">A 7–8 hour shoot, better value per hour than two half-days. Pitched for bigger productions, batch content for multiple months at once, or multi-location days.</div>
+          </div>
+          <div class="alacarte-price">$945</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Podcast / event coverage (½ day)</div>
+            <div class="alacarte-desc">Different from a regular shoot — the deliverable is a full episode edit plus multiple social highlight clips. Includes multi-cam and audio handled appropriately for the format.</div>
+          </div>
+          <div class="alacarte-price">$565</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Rush turnaround (24–48 hrs)</div>
+            <div class="alacarte-desc">Standard delivery is 5–7 business days. Rush moves your project to the front of the queue for time-sensitive launches, events, or announcements.</div>
+          </div>
+          <div class="alacarte-price">$165</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alacarte-category">
+      <div class="alacarte-category-head">Content · Extras</div>
+      <div class="alacarte-grid">
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Extra short-form video</div>
+            <div class="alacarte-desc">One additional Reel, TikTok, or Short beyond your tier's allotment. Edited, captioned, and on-brand. Useful when capitalizing on a trending moment or specific campaign.</div>
+          </div>
+          <div class="alacarte-price">$100</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Extra long-form video</div>
+            <div class="alacarte-desc">One additional 3–10 minute polished video — YouTube content, training video, sales explainer, or podcast episode edit. Long-form takes 3–5x the edit time of a short, hence the difference in price.</div>
+          </div>
+          <div class="alacarte-price">$345</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Additional ad creative</div>
+            <div class="alacarte-desc">A new ad variant for testing. Different hook, different CTA, different visual angle. Necessary when current ads fatigue or you want to A/B test new offers.</div>
+          </div>
+          <div class="alacarte-price">$120</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alacarte-category">
+      <div class="alacarte-category-head">Strategy &amp; Funnels</div>
+      <div class="alacarte-grid">
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Custom landing page</div>
+            <div class="alacarte-desc">A standalone page built around one offer or campaign — designed to convert ad traffic (form fill, booking, opt-in). What you're getting is the strategy: headline, hook, CTA placement, and mobile optimization.</div>
+          </div>
+          <div class="alacarte-price">$625</div>
+        </div>
+
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">Email/SMS campaign build</div>
+            <div class="alacarte-desc">A pre-built sequence (5–7 messages) for a specific purpose: welcome new leads, re-engage cold leads, promote a launch, recover abandoned bookings. Includes copy, automation logic, and CRM integration. One-time build, runs forever.</div>
+          </div>
+          <div class="alacarte-price">$425</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alacarte-category">
+      <div class="alacarte-category-head">DIY · Self-paced Resources</div>
+      <div class="alacarte-grid">
+        <div class="alacarte-item">
+          <div class="alacarte-item-main">
+            <div class="alacarte-name">DIY Startup Playbook</div>
+            <div class="alacarte-desc">The complete written guide and SOP for businesses who want to set up the AI growth stack themselves. Self-paced, no support included.</div>
+          </div>
+          <div class="alacarte-price">$245</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 2.5rem; max-width: 740px; margin-left: auto; margin-right: auto;">
+      All add-ons billed in addition to your monthly package. Travel free within 20 miles of Fort Myers; $0.75/mile beyond.
+    </p>
+  </div>
+</section>
+
+<section class="cta-block">
+  <div class="container">
+    <h2>Want help putting it all together?</h2>
+    <p>We'll review the list with you on your call to make sure you've added everything you actually need — and nothing you don't.</p>
+    <a href="/marketing/#contact" class="btn-primary">Book a Call</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="Lighthouse Studios">
+        <div class="footer-brand-text">Lighthouse Marketing</div>
+        <div style="font-size: 0.78rem; letter-spacing: 0.16em; color: rgba(255,255,255,0.55); margin-top: 0.4rem;">PART OF LIGHTHOUSE STUDIOS™</div>
+        <p class="footer-tagline">Be the beacon in your market.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Lighthouse Brands</h4>
+        <a href="/marketing/">Lighthouse Marketing</a>
+        <a href="/vows/">Lighthouse Vows</a>
+        <a href="/real-estate/">Lighthouse Real Estate</a>
+      </div>
+      <div class="footer-col">
+        <h4>This Site</h4>
+        <a href="/marketing/approach">Our Approach</a>
+        <a href="/marketing/#pricing">Pricing</a>
+        <a href="/marketing/about/">About</a>
+        <a href="/marketing/#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:grow@lighthousestudiosfl.com">grow@lighthousestudiosfl.com</a>
+        <a href="tel:+12397447511">(239) 744-7511</a>
+      </div>
+    </div>
+    <div class="footer-social" aria-label="Social links">
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.1c2.7 0 4.9 2.2 4.9 4.9s-2.2 4.9-4.9 4.9-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9zm0 8c1.8 0 3.2-1.4 3.2-3.2s-1.4-3.2-3.2-3.2-3.2 1.4-3.2 3.2 1.4 3.2 3.2 3.2zm6.3-8.2c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1.5-1.1 1.1-1.1 1.1.5 1.1 1.1z"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.6c-.8 0-1.5-.7-1.5-1.5S6.2 5.6 7 5.6s1.5.7 1.5 1.5S7.8 8.6 7 8.6zm11.3 9.7h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2c.3-.6 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4.1v4.7z"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.6 6.3c-.6-.2-1.2-.5-1.7-.9-.7-.5-1.2-1.2-1.5-2-.1-.4-.2-.8-.2-1.2h-3.3v13.3c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5 1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1V9.8c-.3 0-.5-.1-.8-.1-3.2 0-5.8 2.6-5.8 5.8s2.6 5.8 5.8 5.8 5.8-2.6 5.8-5.8V9.4c1.2.9 2.7 1.4 4.3 1.4V7.5c-.3 0-.6 0-.9-.1z"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Threads"><svg viewBox="0 0 24 24"><path d="M17.3 11.1c-.1 0-.2-.1-.3-.1-.1-1.6-1.1-3-2.6-3.7-1.5-.7-3.5-.5-5 .5-.4.3-.5.8-.3 1.2.3.4.8.5 1.2.3 1-.7 2.4-.8 3.4-.3 1 .5 1.6 1.4 1.7 2.4-.7-.1-1.4-.2-2.2-.1-2 .2-3.4 1.4-3.3 2.9.1 1.5 1.6 2.5 3.4 2.4 1.6-.1 2.9-1.1 3.2-2.5 1.2.6 2.1 1.5 2.4 2.6.4 1.4-.4 3-2.3 4-1.6.9-3.6 1-5.3.3-2-.8-3.2-2.4-3.5-4.7-.2-1.4-.2-3 .1-4.5.6-3.6 2.7-5.3 6-5.3 2.6 0 4.6 1.1 5.7 3.1.2.4.7.5 1.1.3.4-.2.5-.7.3-1.1-1.4-2.5-3.9-3.9-7-3.9-4.1 0-6.9 2.3-7.6 6.5-.4 1.7-.4 3.5-.1 5.1.4 2.7 2 4.7 4.5 5.8 1 .4 2.1.6 3.3.6 1.2 0 2.4-.3 3.5-.9 2.5-1.4 3.6-3.7 3-5.7-.5-1.7-1.9-3-3.7-3.7zm-3.7 4.1c-.9.1-1.8-.3-1.8-.9 0-.4.4-.9 1.7-1 .2 0 .4 0 .6 0 .5 0 1.1.1 1.5.2-.1 1-1 1.6-2 1.7z"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Lighthouse Studios<sup class="tm-mark">™</sup>. All rights reserved.</span>
+      <span>Lighthouse Marketing · Part of Lighthouse Studios</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 8); });
+
+document.querySelectorAll('.alacarte-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('open');
+  });
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
