@@ -4,7 +4,7 @@
 
 ## About
 
-Lighthouse Studios is a Fort Myers-based media company founded in 2025. The company operates three specialized sub-brands, each focused on a specific audience and craft:
+Lighthouse Studios is a Fort Myers-based media company. The company operates three specialized sub-brands, each focused on a specific audience and craft:
 
 - **Lighthouse Marketing (LHM)** — AI-powered marketing, ads, and content for businesses
 - **Lighthouse Vows (LHV)** — Wedding videography across Southwest Florida
@@ -18,12 +18,16 @@ Primary service area: Southwest Florida — Fort Myers, Cape Coral, Naples, Boni
 
 ### Lighthouse Marketing (LHM)
 URL: https://lighthousestudiosfl.com/marketing/
-Services: AI-powered ad management (Meta, Google, TikTok), video content production (presence + lead-gen), AI lead nurture, custom landing pages and funnels.
+Services: AI-powered ad management (Meta, Google, TikTok), video content production (presence + lead-gen), AI lead nurture, custom landing pages and funnels, web development, SEO, social media management.
 Pricing:
-- Starter: starting at $1,975/month + $985 setup
-- Growth: starting at $3,775/month + $1,625 setup
-- Scale: starting at $6,750/month + $3,150 setup
+- Starter: starting at $1,975/month + $985 setup (2 half-day shoots/mo)
+- Growth: starting at $3,500/month + $1,625 setup (3 half-day shoots/mo)
+- Scale: starting at $6,250/month + $3,150 setup (4-5 half-day shoots/mo, weekly)
 - DIY Startup Playbook: $245 one-time
+Approach page: https://lighthousestudiosfl.com/marketing/approach/
+FAQs page: https://lighthousestudiosfl.com/marketing/faqs/
+Full add-on list: https://lighthousestudiosfl.com/marketing/add-ons/
+About page: https://lighthousestudiosfl.com/marketing/about/
 
 ### Lighthouse Vows (LHV)
 URL: https://lighthousestudiosfl.com/vows/
@@ -40,3 +44,4 @@ Order portal: https://portal.spiro.media/order/lighthouse/choose-your-package
 - Website: https://lighthousestudiosfl.com/
 - Email: grow@lighthousestudiosfl.com
 - Phone: (239) 744-7511
+- Founding Client Special: setup fee included for the first 5 clients
