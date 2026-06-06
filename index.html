@@ -508,12 +508,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
   
-<script src="/lhs-motion.js"></script>
+<script src="/lhs-motion.js?v=2"></script>
 <script>
-  if (document.querySelector('.lhs-scroll-reveal')) {
-    alert('Motion working — found ' + document.querySelectorAll('.lhs-scroll-reveal').length + ' elements');
+  if (document.querySelector('.lhs-sr')) {
+    alert('Working — found ' + document.querySelectorAll('.lhs-sr').length + ' elements');
   } else {
-    alert('Script loaded but no elements tagged');
+    alert('Still not tagging');
   }
 </script>
 
