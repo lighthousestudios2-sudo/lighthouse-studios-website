@@ -509,5 +509,13 @@ document.getElementById('year').textContent = new Date().getFullYear();
 </script>
   
 <script src="/lhs-motion.js"></script>
+<script>
+  if (document.querySelector('.lhs-scroll-reveal')) {
+    alert('Motion working — found ' + document.querySelectorAll('.lhs-scroll-reveal').length + ' elements');
+  } else {
+    alert('Script loaded but no elements tagged');
+  }
+</script>
+
 </body>
 </html>
